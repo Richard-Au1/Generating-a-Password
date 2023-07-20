@@ -21,7 +21,7 @@ function writePassword() {
     userSpecial = userSpecial.toUpperCase();
 
     if(userLower === answer){
-      const passArray = userLower.concat(passArray);
+      const passArray = letters.concat(passArray);
       console.log(passArray)
     }else{
       console.log("Lowercase letters will not be used.");
