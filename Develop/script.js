@@ -3,6 +3,7 @@ var generateBtn = document.querySelector("#generate");
 var letters = ["a", "b", "c", "d", "e", "f", "g", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var specialCharacters = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "]", "^", "-", "`", "{", "}  ", "|", "~"];
 var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+var answer = "Y";
 
 // Write password to the #password input
 function writePassword() {
@@ -14,9 +15,35 @@ function writePassword() {
   var userSpecial = prompt("Would you like special character? (type y for yes and n for no)");
 
   function generatePassword(){
-    Number(userLength);
-    password.length = userLength;
-    console.log(password.length);
+    userLower = userLower.toUpperCase();
+    userUpper = userUpper.toUpperCase();
+    userNumber = userNumber.toUpperCase();
+    userSpecial = userSpecial.toUpperCase();
+
+    if(userLower === answer){
+      const passArray = userLower.concat(passArray);
+      console.log(passArray)
+    }else{
+      console.log("Lowercase letters will not be used.");
+    }
+
+    // if(userUpper === answer){
+
+    // }else{
+    //   alert("Uppercase letters will not be used.")
+    // }
+
+    // if(userNumber === answer){
+
+    // }else{
+    //   alert("Numbers will not be used.")
+    // }
+
+    // if(userSpecial === answer){
+
+    // }else{
+    //   alert("Special characters will not be used.")
+    // }
   }
 
   var password = generatePassword();
