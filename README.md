@@ -10,7 +10,7 @@ No installation required to use the website.
 
 ## Usage
 
-Here is the URL to my password generator: 
+Here is the URL to my password generator: https://richard-au1.github.io/Generating-a-Password/ 
 
 Here is the webpage of the password generator. 
 ![Alt text](assets/image/Webpage.PNG)
@@ -20,7 +20,12 @@ Once the red button is clicked the user will be prompted to choose through sever
 ![Alt text](<assets/image/first notification.PNG>)
 ![Alt text](<assets/image/first notification.PNG>)
 
-After all the criterias have been chosen a 
+After all the criterias have been chosen, the generated password will be shown in the middle of the screen as displayed below. 
+
+![Alt text](<assets/image/Password displayed.PNG>)
+
+Enjoy using my password generator!
+
 ## Credits
 
 The mentors I have had along the way.
