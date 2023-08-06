@@ -9,9 +9,15 @@ var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 function writePassword() {
   function generatePassword(){
     alert("Which Criterias would you like to be in your password?");
-    var userLength = prompt("How long do you want your password to be? (Please provide an answer as a number between 8 and 128 characters.)");
-    var userLower = confirm("Would you like lowercase letters in the password? (type y for yes and n for no)");
-    var userUpper = confirm("Would you like uppercase letters in the password? (type y for yes and n for no)");
+    var userLength = prompt("How long do you want your password to be? (Please provide an answer as a number between 8 to 128 characters.)");
+    if(userLength < 8 || userLength > 128){
+      alert("A number was not submitted between 8 to 128. The program will be restarting from the beginning.")
+      writePassword();
+    }else{
+      console.log(userLength);
+    }
+    var userLower = confirm("Would you like lowercase letters in the password?");
+    var userUpper = confirm("Would you like uppercase letters in the password?");
     var userNumber = confirm("Would you like numbers in the password? ");
     var userSpecial = confirm("Would you like special character? ");
   
